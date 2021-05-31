@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KBMIN</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <a class="site_name" href="Home.html">
+                Kyungbae's Portfolio
+            </a>
+            <div class="nav_right">
+                <a class="nav_item" href="Home.html">Home</a>
+                <a class="nav_item" href="About.html">About</a>
+                <a class="nav_item" href="Projects.html">Projects</a>
+                <a class="nav_item" href="SNS.html">SNS</a>
+                <a class="login" href="Login.html">Sign In</a>
+            </div>
+        </div>
+        
+        <div class="boxes">
+            <!-- <div class="box" href="#" data-aos="fade-up" ata-aos-duration="3000" onmouseover="wide('box1')" onmouseout="narrow('box1')" id="box1"> -->
+            <div class="box_project" href="#">
+                <div class="box_title">Academic</div>
+                <div id="text1">
+                    <!-- <p>&nbsp;&nbsp;- Entry: 19S</p>
+                    <p>&nbsp;&nbsp;- Major: AMS</p>
+                    <p>&nbsp;&nbsp;- Minor: CS</p>
+                    <p>&nbsp;&nbsp;- Credit: 69/120</p>
+                    <p>&nbsp;&nbsp;- Cum GPA: 3.98/4.0</p> -->
+                </div>
+            </div>
+            <div class="box_project" href="#">
+                <div class="box_title">Music</div>
+                <!-- <p>&nbsp;&nbsp;- Producing with Garageband</p>
+                <p>&nbsp;&nbsp;- A. Guitar</p>
+                <p>&nbsp;&nbsp;- B. Guitar</p>
+                <p>&nbsp;&nbsp;- E. Guitar</p>
+                <p>&nbsp;&nbsp;- Piano</p>
+                <p>&nbsp;&nbsp;- Drum</p> -->
+            </div>
+            <div class="box_project" href="#">
+                <div class="box_title">Others</div>
+                <!-- <p>&nbsp;&nbsp;- Drawing</p>
+                <p>&nbsp;&nbsp;- Web Design</p> -->
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // let rafId = 0;
+        // let height = 50;
+
+        // function wide(box){
+        //     var count = 0;
+        //     var h = height;
+        //     function wide(){
+        //         height = h + count**2;
+        //         console.log(height);
+        //         count = count + 1;
+        //         document.getElementById(box).style.height = height + "px";        
+        //         rafId = requestAnimationFrame(wide);
+        //         if(height > 300){
+        //             cancelAnimationFrame(rafId);
+        //         }
+        //         console.log(rafId);
+        //         console.log("wide");   
+        //     }
+        //     wide();
+        // }
+        
+        // function narrow(box){
+        //     cancelAnimationFrame(rafId);
+        //     var count = 0;
+        //     var h = height;
+        //     function narrow(){
+        //         height = h - count**2;
+        //         count = count + 1;
+        //         document.getElementById(box).style.height = height+"px";        
+        //         rafId = requestAnimationFrame(narrow);
+        //         if(height <= 50){
+        //             cancelAnimationFrame(rafId);
+        //         }
+        //         console.log(rafId);
+        //         console.log("narrow");
+        //     }
+        //     narrow();
+        // }
+    </script>
+</body>
+</html>

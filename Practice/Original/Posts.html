@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-XSS-Protection" content="1"/>
+        <title>KBMIN</title>
+        <link rel="stylesheet" href="../style.css" type="text/css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+        <style>
+            input{
+                background: transparent;
+                border: transparent;
+                border-bottom: 2px solid white;
+                margin: 20px; 
+                margin-left: 15px;  
+                padding: 5px;
+                width: 40%;
+                color: inherit;
+                font-family: inherit;
+                transition: padding 0.15s ease-in-out, border-color 0.15s ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a class="site_name" href="/page/Home">Kyungbae's Portfolio</a>
+            <div class="nav_right">
+            <a class="nav_item" href="/page/Home">Home</a>
+            <a class="nav_item" href="/page/About">About</a>
+            <a class="nav_item" href="/page/Posts">Posts</a>
+            <a class="nav_item" href="/page/Projects">Projects</a>
+            <a class="nav_item" href="/page/SNS">SNS</a>
+            <a class="login" href="/page/Signin">Sign In</a>
+            </div>
+        </div>
+        <div class="boxes_posts" style="height: 5rem; overflow: visible;">
+            <div class="categories">
+                <div class="title_posts" style="margin-left: 50px;">Title</div>
+                <div class="author_posts" style="margin-right: 120px;">Author</div>
+                <div class="date_posts" style="margin-right: 55px;">Date    </div>
+            </div>
+        </div>
+        <div class="boxes_posts" style="margin-top: 0;">
+            <!-- <div class="box_posts" id="post1" onclick="document.getElementById('post1').style.height = 'auto';"> -->
+            <div class="box_posts" id="1" >
+                <div class="container_posts" onclick="extend('1');">    
+                    <div class="title_posts">title</div>
+                    <div style="display: flex; align-items: center; width: 18rem;">
+                        <div class="author_posts">username</div>
+                        <div class="date_posts">Dec 26, 2020</div>
+                    </div>
+                </div>
+                <div style="margin-left: 15px; margin-top: 20px; font-size: 1rem;">
+                    <span>Write the Text Content</span>
+                </div>
+                <div class="more" style="margin-bottom: 10px;">
+                    
+                        <div class="edit_btn" style="margin-left:auto; margin-right:10px;">Edit</div>
+                        <input type="hidden" name="idx" value="${posts[i].idx}">
+                    <form action="/delete_process" id="deleteform${posts[i].idx}" method="post">
+                        <input type="hidden" name="idx" value="${posts[i].idx}">
+                        <div class="del_btn" style=" margin-right:10px; margin-left:10px;">Delete</div>
+                    </form>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="text" placeholder="Comment">
+                    <div class="reply_btn">reply</div>
+                </div>
+                <div style="display: flex; align-items: center; font-size: 1rem;">
+                    <div style="margin: 15px; font-weight: bolder;">Username</div>
+                    <div style="margin-right: 15px;">This is the comment about this thread.</div>
+                    <div class="reply_del_btn">delete</div>
+                </div>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+
+            function extend(id){
+                document.getElementById(id).classList.toggle("box_posts_active"); 
+            }
+        </script>
+    </body>
+</html>

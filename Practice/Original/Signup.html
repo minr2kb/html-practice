@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KBMIN</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <a class="site_name" href="Home.html">
+                Kyungbae's Portfolio
+            </a>
+            <div class="nav_right">
+                <a class="nav_item" href="Home.html">Home</a>
+                <a class="nav_item" href="About.html">About</a>
+                <a class="nav_item" href="Projects.html">Projects</a>
+                <a class="nav_item" href="SNS.html">SNS</a>
+                <a class="login" href="Login.html">Sign In</a>
+            </div>
+        </div>
+        <div class="login_main">
+            <div class="input_signup" data-aos= "zoom-out" ata-aos-duration="3000">
+                <!-- <div class="signup_btn_container">	
+                    <input placeholder="E-mail" type="email"></input>
+                </div> -->
+                <div class="signup_btn_container">	
+                    <input placeholder="Username" onkeypress="enter2()" type="text" id="id"></input>
+                </div>
+                <div class="signup_btn_container">	
+                    <input placeholder="Password" onkeypress="enter2()" type="password" id="pw"></input>
+                </div>
+                <div class="signup_btn_container">	
+                    <input placeholder="Password Check" onkeypress="enter2()" type="password" id="repw"></input>
+                </div>
+                <div class="signup_btn_container">
+                    <div class="signup_btn" onclick="register();">Sign Up</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

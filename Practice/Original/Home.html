@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KBMIN</title>
+    <link rel="stylesheet" href="../style.css" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+      <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <div class="nav">
+        <!-- <a class="site_name" id="logo" href="Home.html"> -->
+        <a class="site_name" id="logo" onclick="test();">
+            10
+        </a>
+        <div class="nav_right">
+            <a class="nav_item" href="Home.html">Home</a>
+            <a class="nav_item" href="About.html">About</a>
+            <a class="nav_item" href="Projects.html">Projects</a>
+            <a class="nav_item" href="SNS.html">SNS</a>
+            <a class="login" href="Login.html">Sign In</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title" data-aos="fade-up">Welcome</div>
+        <div class="subtitle" data-aos="fade-up">This is Kyungbae's Portfolio</div>
+        <div class="text" data-aos="fade-up"><p>Hello, I'm Kyungbae Min and this is my first web-design project.</p> 
+            <p>This portfolio is made with HTML5, CSS, and JavaScript and the background graphic is designed by Paolo Pettigiani.</p>
+        </div>
+    </div>
+    <div class="more" data-aos="fade-up">
+        <a class="more_btn" href="About.html">More</a>
+    </div>
+    <div class="more" style="justify-content: center; color: rgba(255, 255, 255, 0.8); font-family: inherit;">
+        <span>Visitors</span>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function test(){
+            document.getElementById(`logo`).innerHTML = document.getElementById(`logo`).innerHTML+1;
+        }
+        </script>
+</body>
+</html>
