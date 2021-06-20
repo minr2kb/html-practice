@@ -3,7 +3,7 @@ const mysql = require('sync-mysql');
 const connection = new mysql({
     host     : 'localhost',
     user     : 'root',
-    password : 'mkb1129ok',
+    password : password,
     database : 'db',
     dateStrings: 'date'
     });
