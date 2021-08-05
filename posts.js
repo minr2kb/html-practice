@@ -2,9 +2,10 @@ const mysql = require("sync-mysql");
 import User from "./User";
 
 const connection = new mysql({
+
   host: "localhost",
   user: "root",
-  password: User.password,
+  password: password,
   database: "db",
   dateStrings: "date",
 });
@@ -260,6 +261,7 @@ module.exports = {
     return id["LAST_INSERT_ID()"];
   },
 
+<<<<<<< HEAD
   comments_del: function (commentidx, postidx) {
     connection.query(
       `UPDATE posts SET commentcnt = commentcnt-1 WHERE idx=${postidx};`
@@ -267,3 +269,10 @@ module.exports = {
     connection.query(`DELETE FROM comments WHERE commentidx=${commentidx};`);
   },
 };
+=======
+    comments_del: function(commentidx, postidx){
+        connection.query(`UPDATE posts SET commentcnt = commentcnt-1 WHERE idx=${postidx};`);
+        connection.query(`DELETE FROM comments WHERE commentidx=${commentidx};`);        
+    }
+}
+>>>>>>> 13ff76ea397054c59f3f62800c00d7660974fc28
